@@ -10,8 +10,9 @@ We tried to train it o0n 10% of the latest Wiki Dump,  but were unable to proces
 We downloaded the Wiki Xml file and preprocessed it to .txt file using the extractor [script](data/Wiki/wikiex).
 
 ## Run the Code
-```py
-python3 src/main.py
+```sh
+cd src
+python3 main.py
 ```
 
 ## Evaluation
