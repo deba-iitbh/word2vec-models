@@ -1,9 +1,13 @@
 import torch
 from train import train
+from preprocessing import data_prep
 
 # Pre-processing vars
 DATA_DIR = "../data/Wiki"
+data_prep(DATA_DIR)
 DEVICE = torch.device("cuda")
+
+
 
 # Model Vars
 NUM_EPOCHS = 10

@@ -40,17 +40,6 @@ def train(
     word_to_ix = train_dataset.word_idx
     ix_to_word = train_dataset.idx_word
 
-    # # Loading weights directly
-    # with open(f"{DATA_DIR}/{TYPE}_data.pth", "rb") as g:
-    #     train_dataset = pickle.load(g)
-    # train_loader = DataLoader(train_dataset, batch_size = BATCH_SIZE, shuffle = not True)
-    # with open(f"{DATA_DIR}/vocab.pth", "rb") as g:
-    #     vocab = pickle.load(g)
-    # with open(f"{DATA_DIR}/word_idx.pth", "rb") as g:
-    #     word_to_ix = pickle.load(g)
-    # with open(f"{DATA_DIR}/idx_word.pth", "rb") as g:
-    #     ix_to_word = pickle.load(g)
-
     # Negative Subsampling
     if NEGATIVE_SAMPLES > 0 and TYPE != "glove":
         print("== Negative Sampling ==")
